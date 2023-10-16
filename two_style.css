@@ -1,0 +1,88 @@
+header{
+    
+    background-image: url("coffee.jpg");
+   height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    min-height: 100px; 
+   
+}
+
+
+*{
+    margin:0;
+    /* background-image를 전체 영역에 맞추고 싶어서 */
+   
+}
+.bar{
+    display: flex; 
+    /* 요소들을 한 줄에 보이게 하기 위해서 */
+    justify-content: space-between;
+    /* justify-content: 가로축 space-between: 양쪽 간격이 일정 */
+    /* align-items: 세로축 center:컨테이너 중앙 정렬 */
+    align-items: baseline;
+}
+
+.bar_logo{
+    font-weight: bold;
+   padding: 8px;
+   margin: 0;
+   margin-right: 3px
+}
+
+.bar_language{
+    padding: 8px;
+    margin: 0;
+    margin-left: 3px;
+}
+
+.bar_menu{
+    display: flex;
+    padding:  0;
+
+}
+
+.bar_menu li{
+    padding: 8px 12px;
+    font-weight:bold;
+}
+
+.bar_menu .sub{
+	display:none;
+
+}
+
+
+.bar:hover .bar_logo,
+.bar_menu:hover .sub{ 
+    background-color: white;
+    display: flex;
+    flex-direction: column;} 
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.logo{
+    font-size:17px;
+    font-weight: bold;
+}
+
+*{
+    font-family: "Mark Pro","맑은 고딕", sans-serif;
+}
+
+
+  ul{ 
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}  
+
+ul li{
+    display: inline-block;
+ } 

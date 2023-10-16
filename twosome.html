@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWOSOME PLACE</title>
+    <link rel="stylesheet" href="two_style.css">
+    <script>
+		var m = document.querySelector('.sub');
+		var children = m.querySelectorAll('*');
+		
+		for(var i=0; i<children.length; i++){
+			children[i].style.color="black";
+		}
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- header영역이 3부분으로 나누어져 있기 때문에 div를 3개로 나눔 -->
+        <nav class="bar">
+            <!-- 메뉴의 링크부분에 구혁을 나타내주기 위해서 nav클래스로 header요소의 안쪽을 nav로 감쌈 -->
+            <div class="bar_logo"><a href="#">
+            A TWOSOME PLACE<br>
+            coffee&dessert
+            </a>
+        </div>
+
+       <div class="bar_menu">
+            <ul>
+                <li class="a"><a href="#">투썸플레이스 소개
+                <!-- 태그에 하이퍼링크를 생성하기 위해 a 태그를 li태그 안에 형성 -->
+                <ul class="sub">
+                    <li><a href="#">투썸플레이스</a></li>
+                    <li><a href="#">비전체계</a></li>
+                    <li><a href="#">BI</a></li>
+                    <li><a href="#">20주년 이야기</a></li>
+                    <li><a href="#">Recruit</a></li>
+                    <li><a href="#">매장</a></li>
+                    <li><a href="#">DT/DI</a></li>
+                    <li><a href="#">브랜드</a></li>
+                </ul>
+                </a></li>
+                <li class="a" id="menu"><a href="#menu">메뉴이야기
+                    <ul class="sub">
+                        <li><a href="">커피이야기</a></li>
+                        <li><a href="">디저트이야기</a></li>
+                        <li><a href="">델리이야기</a></li>
+                    </ul>
+                </a></li>
+                <li class="a"><a href="#">브랜드 지원
+                    <ul class="sub">
+                        <li><a href="">어썸 페어링 플랜트</a></li>
+                        <li><a href="">어썸 디저트 플랜트</a></li>
+                        <li><a href="">C&D센터</a></li>
+                        <li><a href="">SEP센터</a></li>    
+                      
+                    </ul>
+                </a></li>
+               
+                <li class="a"><a href="#">투썸플레이스 앱&멤버십
+                    <ul class="sub">
+                        <li><a href="">투썸플레이스 앱 소개</a></li>
+                        <li><a href="">투썸플레이스 멤버십</a></li>
+                        <li><a href="">멤버십 소개</a></li>
+                        <li><a href="">등급 및 혜택</a></li>
+                      
+                    </ul>
+                </a></li>
+
+                <li class="a"><a href="#">가맹점 창업안내
+                    <ul class="sub">
+                        <li><a href="">가맹점 개설 안내</a></li>
+                        <li><a href="">창업설명회</a></li>
+                        <li><a href="">온라인 창업상담신청</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">가맹점 전용 금융상품</a></li>
+                    </ul>
+                </a></li>
+                <li class="a"><a href="#">새소식&공지
+                    <ul class="sub">
+                        <li><a href="">공지사항</a></li>
+                    </ul>
+                </a></li>
+            </ul>
+        </div>
+
+       <div class="bar_language">
+            <a href="#">
+            English
+        </a>
+    </div>
+           
+    </header>
+    <aside>
+		<div class="progress bar">
+			
+		</div>
+    </aside>
+    <footer>
+        <div class="swiper-slide">
+			
+		</div>
+		<div class="swiper-button-prev">
+			
+		</div>
+		<div class="swiper-button-next"></div>
+    </footer>
+</body>
+</html>
