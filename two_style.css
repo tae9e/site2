@@ -1,88 +1,157 @@
-header{
-    
-    background-image: url("coffee.jpg");
-   height: 100vh; 
-    background-size: cover;
-    background-position: center;
-    min-height: 100px; 
-   
-}
+header {
 
-
-*{
-    margin:0;
-    /* background-image를 전체 영역에 맞추고 싶어서 */
-   
-}
-.bar{
-    display: flex; 
-    /* 요소들을 한 줄에 보이게 하기 위해서 */
-    justify-content: space-between;
-    /* justify-content: 가로축 space-between: 양쪽 간격이 일정 */
-    /* align-items: 세로축 center:컨테이너 중앙 정렬 */
-    align-items: baseline;
-}
-
-.bar_logo{
-    font-weight: bold;
-   padding: 8px;
-   margin: 0;
-   margin-right: 3px
-}
-
-.bar_language{
-    padding: 8px;
-    margin: 0;
-    margin-left: 3px;
-}
-
-.bar_menu{
-    display: flex;
-    padding:  0;
-
-}
-
-.bar_menu li{
-    padding: 8px 12px;
-    font-weight:bold;
-}
-
-.bar_menu .sub{
-	display:none;
+	background-image: url("coffee.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
 
 }
 
 
-.bar:hover .bar_logo,
-.bar_menu:hover .sub{ 
-    background-color: white;
-    display: flex;
-    flex-direction: column;} 
+* {
+	margin: 0;
+	/* background-image를 전체 영역에 맞추고 싶어서 */
 
-a{
-    text-decoration: none;
-    color:white;
 }
 
-.logo{
-    font-size:17px;
-    font-weight: bold;
+.bar {
+	display: flex;
+	/* 요소들을 한 줄에 보이게 하기 위해서 */
+	justify-content: space-between;
+	/* justify-content: 가로축 space-between: 양쪽 간격이 일정 */
+	/* align-items: 세로축 center:컨테이너 중앙 정렬 */
+	align-items: baseline;
 }
 
-*{
-    font-family: "Mark Pro","맑은 고딕", sans-serif;
+.bar_logo {
+	font-weight: bold;
+	padding: 8px;
+	margin: 0;
+	margin-right: 3px
+}
+
+.bar_language {
+	padding: 8px;
+	margin: 0;
+	margin-left: 3px;
+}
+
+.bar_menu {
+	display: flex;
+	padding: 0;
+
+}
+
+.bar_menu li {
+	padding: 8px 12px;
+	font-weight: bold;
+}
+
+.bar_menu .sub {
+	display: none;
+	color: black;
 }
 
 
-  ul{ 
-    float: right;
-    list-style-type: none;
-    margin-top: 30px;
-    min-height: 400px;
-    margin-right: 60px;
-    font-size: 17px;
-}  
 
-ul li{
-    display: inline-block;
- } 
+
+.bar_logo:hover a,
+.bar_menu:hover a,
+.bar_language:hover a {
+	color: black;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.logo {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+* {
+	font-family: "Mark Pro", "맑은 고딕", sans-serif;
+}
+
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 30px;
+	min-height: 400px;
+	margin-right: 60px;
+	font-size: 17px;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.scroll {
+	--swiper-navigation-size: 44px;
+	--swiper-theme-color: #007aff;
+	box-sizing: border-box;
+}
+/*navigation css속성
+{
+  --swiper-navigation-size: 44px; 아이콘의 너비와 높이
+  --swiper-navigation-top-offset: 50%; 아이콘이 부모요소의 상단 가운데 위치
+  --swiper-navigation-sides-offset: 10px; 여백 10px
+  --swiper-navigation-color: var(--swiper-theme-color);
+}*/
+
+.scroll-bar {
+
+	right: 48px;
+	height: 134px;
+	position: fixed;
+	width: 23px;
+	margin-top: -580px;
+/*	scroll icon이기 때문에 margin-top에 -580px를 줘서 2~6페이지가 없어도 아이콘이 보이게 만듦*/
+
+}
+
+.scroll-icon,
+.scroll-total {
+	display: block;
+	color: black;
+	text-align: center;
+	line-height: 1.1;
+	font-family: 'Mark Pro';
+	font-weight: 700;
+}
+
+.scroll,
+.scroll::before,
+.scroll::after {
+	box-sizing: inherit;
+}
+
+.scroll-icon-wheel-inner {
+	height: 84px;
+	margin: 12px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 2px
+}
+
+.scroll-active {
+	display: block;
+	width: 2px;
+	background-color: #000;
+}
+
+.swiper-wrap{
+	width: 136px;
+	bottom: 24px;
+	margin-left: -68px;
+	display: flex;
+	position: absolute;
+	left: 50%;
+	
+}

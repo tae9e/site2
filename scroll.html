@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	@keyframes scroll_1 {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-0.6em); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(0.6em); }
+  100% { transform: translateY(0); }
+}
+
+.example--1 {
+  background: tomato;
+}
+
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: .6em;
+  height: 1em;
+  width: .4em;
+  margin-left: -.2em;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: #fff;
+  animation: scroll_1 2.75s ease-in-out infinite;
+}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+  <section class="example example--1">
+    <span class="scroll-icon">
+      <span class="scroll-icon__wheel-outer">
+        <span class="scroll-icon__wheel-inner"></span>
+      </span>
+    </span>
+    <h2>Example 1</h2>
+  </section>
+  <section class="example example--2">
+    <span class="scroll-icon">
+      <span class="scroll-icon__dot"></span>
+    </span>
+</body>
+</html>
